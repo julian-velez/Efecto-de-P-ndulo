@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 150px;
+    background-color: black;
+}
+
+
+/* styles.css */
+.pendulum-container {
+    position: relative;
+    width: 200px; /* Ajusta el tamaño según tus necesidades */
+    height: 200px;
+    animation: pendulum 2s infinite alternate; /* Animación de péndulo */
+}
+
+img {
+    width: 500px;
+    height: 500px;
+}
+
+@keyframes pendulum {
+    0% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(-10deg);
+    }
+}
